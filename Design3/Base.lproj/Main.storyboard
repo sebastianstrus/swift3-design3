@@ -106,10 +106,35 @@
                                     <action selector="mainPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u5E-m2-coy"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="c1" translatesAutoresizingMaskIntoConstraints="NO" id="gNf-SZ-K0m" userLabel="C1">
+                                <rect key="frame" x="16" y="103" width="240" height="360"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="c2" translatesAutoresizingMaskIntoConstraints="NO" id="PCG-d6-q9N" userLabel="C2">
+                                <rect key="frame" x="30" y="90" width="240" height="360"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="c3" translatesAutoresizingMaskIntoConstraints="NO" id="HEp-02-Hcz" userLabel="C3">
+                                <rect key="frame" x="51" y="77" width="240" height="360"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="c4" translatesAutoresizingMaskIntoConstraints="NO" id="DfT-LM-rVa" userLabel="C4">
+                                <rect key="frame" x="78" y="67" width="240" height="360"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="c5" translatesAutoresizingMaskIntoConstraints="NO" id="0dk-DE-htj" userLabel="C5">
+                                <rect key="frame" x="119" y="55" width="240" height="360"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
+                        <outlet property="c1View" destination="gNf-SZ-K0m" id="Wi8-Gb-P4f"/>
+                        <outlet property="c2View" destination="PCG-d6-q9N" id="2to-y7-Pe8"/>
+                        <outlet property="c3View" destination="HEp-02-Hcz" id="JN9-Fj-jdB"/>
+                        <outlet property="c4View" destination="DfT-LM-rVa" id="xUD-8p-hW8"/>
+                        <outlet property="c5View" destination="0dk-DE-htj" id="6Cy-wZ-66B"/>
                         <outlet property="card1" destination="4AZ-eh-JDb" id="sxR-3u-eSe"/>
                         <outlet property="card2" destination="cBl-IM-9Lz" id="luj-F7-myt"/>
                         <outlet property="card3" destination="LKL-TE-QJO" id="4nG-8k-lN6"/>
@@ -123,6 +148,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="c1" width="480" height="720"/>
+        <image name="c2" width="480" height="720"/>
+        <image name="c3" width="480" height="720"/>
+        <image name="c4" width="480" height="720"/>
+        <image name="c5" width="480" height="720"/>
         <image name="card1" width="100" height="100"/>
         <image name="card2" width="100" height="100"/>
         <image name="card3" width="100" height="100"/>

@@ -10,6 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var c1View: UIImageView!
+    @IBOutlet weak var c2View: UIImageView!
+    @IBOutlet weak var c3View: UIImageView!
+    @IBOutlet weak var c4View: UIImageView!
+    @IBOutlet weak var c5View: UIImageView!
+    
+    
+    
+    
     
 
     @IBOutlet weak var card1: RoundButton!
@@ -33,12 +42,61 @@ class ViewController: UIViewController {
         card3ButtonCenter = card3.center
         card4ButtonCenter = card4.center
         
-        
         card1.center = mainButton.center
         card2.center = mainButton.center
         card3.center = mainButton.center
         card4.center = mainButton.center
+        
+        
+        
+        
+        UIView.animate(withDuration: 0.5, animations: {
+            self.c1View.alpha = 1
+        }) { (true) in
+            self.showC2()
+        }
     }
+    
+    func showC2(){
+        UIView.animate(withDuration: 0.5, animations: {
+            self.c2View.alpha = 1
+        }, completion: { (true) in
+            self.showC3()
+        })
+        
+    }
+    
+    func showC3() {
+        UIView.animate(withDuration: 0.5, animations: {
+            self.c3View.alpha = 1
+        }) { (true) in
+            self.showC4()
+        }
+    }
+    
+    func showC4() {
+        UIView.animate(withDuration: 0.5, animations: {
+            self.c4View.alpha = 1
+        }, completion: { (true) in
+            self.showC5()
+        })
+    }
+    
+    func showC5() {
+        UIView.animate(withDuration: 0.5) {
+            self.c5View.alpha = 1
+        }
+        
+    }
+    
+    
+    
+
+    
+    
+    
+    
+    
 
 
 
